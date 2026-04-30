@@ -1,0 +1,19 @@
+name : CI/CD Pipeline
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Step
+        run: echo "This is Demo Build"
+  
+  test:
+    runs-on: ubuntu-latest
+    steps:  
+    - name: Test Step
+      run: echo "This is test steps"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Step
+        run: echo "This is deploy steps"
