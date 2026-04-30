@@ -1,7 +1,8 @@
 name : Hello Word Workflow
 on: workflow_dispatch
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Hello Step
-      run: echo "Hello World!"
+  hello:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Hello Step
+         run: echo "Hello World!"
