@@ -1,5 +1,5 @@
 name : Hello Word Workflow
-on: workflow_dispatch
+on: push
 jobs:
   hello:
      runs-on: ubuntu-latest
@@ -8,5 +8,5 @@ jobs:
          run: |
           echo "Hello World1"
           echo "Hello World2"
-          echo "Hello World3"
+ 
     
