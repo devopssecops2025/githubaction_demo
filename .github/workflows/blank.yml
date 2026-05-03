@@ -1,13 +1,12 @@
-name : Hello Word Workflow
-on: 
-  push:
-    branches:
-      - main
+name : Github Repo Checkout
+on: push
 jobs:
-  hello:
+  Github_Checkout:
      runs-on: ubuntu-latest
      steps:
-       - name: Hello Step
-         run: echo "My name is ${{vars.My_Name}}"
+       - name: Checkout the code
+         uses: actions/checkout@v6
+       - name: Print index.html file
+         run: cat index.html; pwd
  
     
